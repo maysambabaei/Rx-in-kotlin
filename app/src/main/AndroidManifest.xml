@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.bugeto.android.cheesefinder">
+
+  <application
+    android:name="com.bugeto.android.cheesefinder.CheeseApp"
+    android:allowBackup="false"
+    android:icon="@drawable/bugetologos"
+    android:label="@string/app_name"
+    android:roundIcon="@drawable/bugetologos"
+    android:theme="@style/AppTheme">
+
+    <activity android:name="com.bugeto.android.cheesefinder.SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.bugeto.android.cheesefinder.CheeseActivity"/>
+
+  </application>
+
+</manifest>
