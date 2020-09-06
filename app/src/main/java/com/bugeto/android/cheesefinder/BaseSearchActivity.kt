@@ -4,19 +4,21 @@ package com.bugeto.android.cheesefinder
 
 import android.content.Context
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.bugeto.android.cheesefinder.database.Cheese
 import com.bugeto.android.cheesefinder.database.CheeseDatabase
 import com.bugeto.android.cheesefinder.database.CheeseUtil
 import io.reactivex.Flowable
 import io.reactivex.Maybe
+import io.reactivex.ObservableEmitter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_cheeses.*
+
 
 abstract class BaseSearchActivity : AppCompatActivity() {
 
@@ -80,3 +82,7 @@ abstract class BaseSearchActivity : AppCompatActivity() {
         }
   }
 }
+
+/*
+
+ */

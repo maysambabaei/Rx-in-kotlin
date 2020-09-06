@@ -35,7 +35,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bugeto.android.cheesefinder.database.Cheese
+import com.bugeto.android.cheesefinder.database.CheeseDatabase
+import com.bugeto.android.cheesefinder.ui.CheckableImageView
+import io.reactivex.Maybe
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class CheeseAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -59,6 +64,29 @@ class CheeseAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     val cheese = cheeses[position]
     holder.itemView.textView.text = cheese.name
     holder.itemView.imageFavorite.isChecked = cheese.favorite == 1
+
+      // 1
+      Maybe.create<Boolean> { emitter ->
+          emitter.setCancellable {
+              holder.itemView.imageFavorite.setOnClickListener(null)
+          }
+
+          holder.itemView.imageFavorite.setOnClickListener {
+              emitter.onSuccess((it as CheckableImageView).isChecked) // 2
+          }
+      }.toFlowable().onBackpressureLatest() // 3
+              .observeOn(Schedulers.io())
+              .map { isChecked ->
+                  cheese.favorite = if (!isChecked) 1 else 0
+                  val database = CheeseDatabase.getInstance(holder.itemView.context).cheeseDao()
+                  database.favoriteCheese(cheese) // 4
+                  cheese.favorite // 5
+              }
+              .subscribeOn(AndroidSchedulers.mainThread())
+              .subscribe {
+                  holder.itemView.imageFavorite.isChecked = it == 1 // 6
+              }
+
 
   }
 

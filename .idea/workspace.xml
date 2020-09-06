@@ -9,7 +9,13 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f1920c5-315c-4807-8ca8-11c97b82e207" name="Default Changelist" comment="" />
+    <list default="true" id="3f1920c5-315c-4807-8ca8-11c97b82e207" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bugeto/android/cheesefinder/BaseSearchActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bugeto/android/cheesefinder/BaseSearchActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bugeto/android/cheesefinder/CheeseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bugeto/android/cheesefinder/CheeseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bugeto/android/cheesefinder/CheeseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bugeto/android/cheesefinder/CheeseAdapter.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +24,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="520324acee2764f9" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -51,7 +58,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="Pixel_2_API_27" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
@@ -148,14 +155,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1599118015960" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599117084156">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599294896136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1599117084156" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1599294896136" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1599118091153">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1599118091153" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599120798801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1599120798801" />
   </component>
   <component name="masterDetails">
     <states>
